@@ -93,7 +93,7 @@ sh run.sh
 
 ## ネットワークの変え方
 
-`/network_gen` 配下に NDN Network を CSV に設定を書くだけで自動的に構築する NDN Network Generatorというシステムを用いています。
+`/network_gen` 配下に NDN Network を CSV に設定を書くだけで自動的に構築する [NDN Network Generator](https://github.com/kobayashiharuto/NDN-network-generator) というシステムを用いています。
 
 ノードの設定、NLSR の設定、face を貼るところまで全て自動で行います。
 
