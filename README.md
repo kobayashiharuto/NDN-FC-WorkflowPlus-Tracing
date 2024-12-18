@@ -38,7 +38,8 @@ DB と grafana を空にしておく
 
 1. ndnネットワークの作成&起動
 ```
-python3 src/main.py
+cd network_gen
+python3 main.py
 ```
 
 2. log_server の起動 & grafana へのアクセス
