@@ -1,0 +1,106 @@
+{
+  "request_id": 3116946326,
+  "node_name": "function1",
+  "function": "/function1/resize",
+  "request": "/function1/resize/(/producer1/data, /producer2/data)",
+  "start_time": "2024-11-19T12:30:43.100000",
+  "end_time": "2024-11-19T12:30:43.500000",
+  "processing_time": "0.4ms",
+  "ip": "172.23.0.3",
+  "path": {
+    "to": [
+      {
+        "source_ip": "172.23.0.1",
+        "destination_ip": "172.23.0.2",
+        "timestamp": "2024-11-19T12:30:43.040000"
+      },
+      {
+        "source_ip": "172.23.0.2",
+        "destination_ip": "172.23.0.3",
+        "timestamp": "2024-11-19T12:30:43.060000"
+      }
+    ],
+    "from": [
+      {
+        "source_ip": "172.23.0.3",
+        "destination_ip": "172.23.0.2",
+        "timestamp": "2024-11-19T12:30:43.440000"
+      },
+      {
+        "source_ip": "172.23.0.2",
+        "destination_ip": "172.23.0.1",
+        "timestamp": "2024-11-19T12:30:43.460000"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "node_name": "producer1",
+      "request": "/producer1/data",
+      "request_id": 112233445,
+      "start_time": "2024-11-19T12:30:43.200000",
+      "end_time": "2024-11-19T12:30:43.250000",
+      "ip": "172.23.0.5",
+      "path": {
+        "to": [
+          {
+            "source_ip": "172.23.0.3",
+            "destination_ip": "172.23.0.4",
+            "timestamp": "2024-11-19T12:30:43.140000"
+          },
+          {
+            "source_ip": "172.23.0.4",
+            "destination_ip": "172.23.0.5",
+            "timestamp": "2024-11-19T12:30:43.160000"
+          }
+        ],
+        "from": [
+          {
+            "source_ip": "172.23.0.5",
+            "destination_ip": "172.23.0.4",
+            "timestamp": "2024-11-19T12:30:43.290000"
+          },
+          {
+            "source_ip": "172.23.0.4",
+            "destination_ip": "172.23.0.3",
+            "timestamp": "2024-11-19T12:30:43.310000"
+          }
+        ]
+      }
+    },
+    {
+      "name": "producer2",
+      "request": "/producer2/data",
+      "request_id": 556677889,
+      "start_time": "2024-11-19T12:30:43.210000",
+      "end_time": "2024-11-19T12:30:43.260000",
+      "ip": "172.23.0.5",
+      "path": {
+        "to": [
+          {
+            "source_ip": "172.23.0.3",
+            "destination_ip": "172.23.0.4",
+            "timestamp": "2024-11-19T12:30:43.150000"
+          },
+          {
+            "source_ip": "172.23.0.4",
+            "destination_ip": "172.23.0.5",
+            "timestamp": "2024-11-19T12:30:43.170000"
+          }
+        ],
+        "from": [
+          {
+            "source_ip": "172.23.0.5",
+            "destination_ip": "172.23.0.4",
+            "timestamp": "2024-11-19T12:30:43.300000"
+          },
+          {
+            "source_ip": "172.23.0.4",
+            "destination_ip": "172.23.0.3",
+            "timestamp": "2024-11-19T12:30:43.320000"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+node1,node2
+consumer1,router1
+function1,router1
+function1,router2
+function1,router3
+producer1,router2
+producer2,router3
+consumer2,router2
+function1,router2
+function1,router4
+function1,router5
+function2,router4
+function2,router6
+producer3,router5
+producer4,router6

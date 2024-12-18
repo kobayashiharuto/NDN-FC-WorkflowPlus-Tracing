@@ -1,0 +1,4 @@
+/examples/**/*.yml
+/examples/**/*.yaml
+*.md
+Dockerfile

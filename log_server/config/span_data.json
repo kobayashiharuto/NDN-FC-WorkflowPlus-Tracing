@@ -1,0 +1,101 @@
+{
+  "request_id": 3116946326,
+  "name": "/function1/a",
+  "request": "/function1/a/(/producer1/aaa, /producer1/bbb)",
+  "start_time": "2024-11-19T12:30:43.100000",
+  "end_time": "2024-11-19T12:30:43.500000",
+  "processing_time": "0.4ms",
+  "ip": "172.23.0.3",
+  "path": {
+    "to": [
+      {
+        "source_ip": "172.23.0.1",
+        "destination_ip": "172.23.0.3",
+        "timestamp": "2024-11-19T12:30:43.100000"
+      }
+    ],
+    "from": [
+      {
+        "source_ip": "172.23.0.3",
+        "destination_ip": "172.23.0.1",
+        "timestamp": "2024-11-19T12:30:43.500000"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "name": "/function2/b",
+      "request_id": 987654321,
+      "start_time": "2024-11-19T12:30:43.200000",
+      "end_time": "2024-11-19T12:30:43.400000",
+      "path": {
+        "to": [
+          {
+            "source_ip": "172.23.0.3",
+            "destination_ip": "172.23.0.4",
+            "node_ip": "172.23.0.4",
+            "timestamp": "2024-11-19T12:30:43.200000"
+          }
+        ],
+        "from": [
+          {
+            "source_ip": "172.23.0.4",
+            "destination_ip": "172.23.0.3",
+            "node_ip": "172.23.0.4",
+            "timestamp": "2024-11-19T12:30:43.400000"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "name": "/producer1/aaa",
+          "request_id": 112233445,
+          "start_time": "2024-11-19T12:30:43.300000",
+          "end_time": "2024-11-19T12:30:43.350000",
+          "path": {
+            "to": [
+              {
+                "source_ip": "172.23.0.4",
+                "destination_ip": "172.23.0.5",
+                "node_ip": "172.23.0.5",
+                "timestamp": "2024-11-19T12:30:43.300000"
+              }
+            ],
+            "from": [
+              {
+                "source_ip": "172.23.0.5",
+                "destination_ip": "172.23.0.4",
+                "node_ip": "172.23.0.5",
+                "timestamp": "2024-11-19T12:30:43.350000"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/producer1/bbb",
+      "request_id": 556677889,
+      "start_time": "2024-11-19T12:30:43.250000",
+      "end_time": "2024-11-19T12:30:43.450000",
+      "path": {
+        "to": [
+          {
+            "source_ip": "172.23.0.3",
+            "destination_ip": "172.23.0.6",
+            "node_ip": "172.23.0.6",
+            "timestamp": "2024-11-19T12:30:43.250000"
+          }
+        ],
+        "from": [
+          {
+            "source_ip": "172.23.0.6",
+            "destination_ip": "172.23.0.3",
+            "node_ip": "172.23.0.6",
+            "timestamp": "2024-11-19T12:30:43.450000"
+          }
+        ]
+      }
+    }
+  ]
+}

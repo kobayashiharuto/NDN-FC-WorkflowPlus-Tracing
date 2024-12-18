@@ -1,0 +1,22 @@
+# 自動生成時にコピーして使う、全ノード共通のDockerfile
+
+# ベースイメージの指定
+FROM hydrokhoos/ndn-all:arm
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# パッケージの追加
+RUN apt update
+RUN apt install -y tcpdump dnsutils iputils-ping net-tools netcat psmisc tmux tshark
+
+# 新しいユーザーを作成
+RUN useradd -ms /bin/bash myuser
+
+# 作業ディレクトリの設定
+WORKDIR /workspaces
+
+# 必要なパッケージをコピー
+COPY requirements.txt /workspaces/
+
+# 必要なパッケージをインストール
+RUN pip install --upgrade pip && pip install -r requirements.txt
